@@ -31,7 +31,7 @@ jobs:
           name: single_file
           path: ./downloaded directory
       - name: Test downloaded file
-        run: ls-ltr
+        run: ls -ltr
           
 
 
