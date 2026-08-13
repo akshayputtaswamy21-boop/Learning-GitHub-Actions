@@ -12,12 +12,24 @@ jobs:
           pwd
           ls -ltr
           hostname
-      - name: step2 -checkout
+      - name: step-2-checkout
         uses: actions/checkout@v7.0.1
       - name: step-3
         run: |
           pwd
-          ls -a
+          eco 'ls -a' >> myartifact.txt 
           ls -ltr
           hostname
+      - name: Upload single File
+        uses: actions/upload-artifact@v7.0.1
+        with:
+          name: single_file
+          path: ./myartifact.txt
+      - name: Download  artifacts
+        uses: actions/download-artifact@v3.1.0
+        with:
+          name: single_file_downloaded
+          path: ./downloaded directory
+
+
           
