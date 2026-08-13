@@ -25,16 +25,15 @@ jobs:
     name: job3
     runs-on: macos-12
     steps:
-      - name: Installing brew
+      - name: Installing tree using homebrew
         run: |
-          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
+          brew install tree
 
   job4:
     name : job4
     needs: job3
     runs-on: macos-12
     steps:
-      - name: Test brew installation
-        run: brew --version
+      - name: Test tree installation
+        run: tree--version
 
