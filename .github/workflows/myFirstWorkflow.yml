@@ -25,15 +25,28 @@ jobs:
     name: job3
     runs-on: macos-12
     steps:
-      - name: Installing tree using homebrew
-        run: |
-          brew install tree
+      - name: Create a message file
+        run: echo "Hello from job3 machine!" > shared-message.txt
+
+      # Upload the file so the next job can access it
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: job3-file
+          path: shared-message.txt
 
   job4:
-    name : job4
+    name: job4
     needs: job3
     runs-on: macos-12
     steps:
-      - name: Test tree installation
-        run: tree--version
+      # Download the file uploaded by job3
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: job3-file
+
+      # Read the file to prove the sequence worked
+      - name: Read message from job3
+        run: cat shared-message.txt
 
