@@ -8,48 +8,17 @@ jobs:
     name: JOB1
     runs-on: ubuntu-latest
     steps:
-      - name: running single command on job1
-        run: echo "Hello This Is my first job"
-      - name: checking os Release for github Hosted Runner
-        run: cat /etc/os-release
-      - name: running sleep
-        run: sleep 5
-  job2:
-    name: job2
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checking the hostname for runner
-        run: hostname
-      - name: Running multiple commands
-        run: | 
-            echo "Hi from AP"
-            echo "Current time is  `date`"
-  job3:
-    name: job3
-    runs-on: macos-latest
-    steps:
-      - name: Create a message file
-        run: echo "Hello from job3 machine!" > shared-message.txt
-
-      # Upload the file so the next job can access it
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: job3-file
-          path: shared-message.txt
-
-  job4:
-    name: job4
-    needs: job3
-    runs-on: macos-latest
-    steps:
-      # Download the file uploaded by job3
-      - name: Download artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: job3-file
-
-      # Read the file to prove the sequence worked
-      - name: Read message from job3
-        run: cat shared-message.txt
-
+      - name: step-1
+        run: |
+          pwd
+          ls -ltr
+          hostname
+      - name: step2 -checkout
+        uses: actions/checkout@5.0.0
+      - name: step-2
+        run: |
+          pwd
+          ls -a
+          ls -ltr
+          hostname
+          
