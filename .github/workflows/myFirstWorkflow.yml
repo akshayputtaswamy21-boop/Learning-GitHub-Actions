@@ -46,7 +46,7 @@ jobs:
 
   job2:
     name: job2
-    runs-on: macos-12
+    runs-on: ubuntu-latest
     steps:
       - exit 1
 
