@@ -33,7 +33,7 @@ jobs:
       - name: Test downloaded file
         run: |
           ls -ltr
-          cd /downloaded_directory
+          cd downloaded_directory
           ls -ltr 
           
 
