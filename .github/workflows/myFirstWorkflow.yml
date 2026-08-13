@@ -48,7 +48,8 @@ jobs:
     name: job2
     runs-on: ubuntu-latest
     steps:
-      - exit 1
+      - name: test pr
+        run: ls -ltr
 
 
 
