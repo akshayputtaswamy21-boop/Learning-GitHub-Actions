@@ -30,6 +30,9 @@ jobs:
         with:
           name: single_file
           path: ./downloaded directory
+      - name: Test downloaded file
+        run: ls-ltr
+          
 
 
           
