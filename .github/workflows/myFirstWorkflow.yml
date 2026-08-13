@@ -5,6 +5,9 @@ on:
       - main
       - dev
       - 'feature-*'
+  pull_request:
+    branches:
+      - main
   workflow_dispatch:
 jobs:
   job1:
