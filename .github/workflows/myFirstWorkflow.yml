@@ -50,8 +50,7 @@ jobs:
     steps:
       - name: test pr
         run: ls -ltr
-      - name: tet2
-        run: exit 1
+
 
 
 
