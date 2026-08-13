@@ -23,7 +23,7 @@ jobs:
             echo "Current time is  `date`"
   job3:
     name: job3
-    runs-on: macos-12
+    runs-on: macos-latest
     steps:
       - name: Create a message file
         run: echo "Hello from job3 machine!" > shared-message.txt
@@ -38,7 +38,7 @@ jobs:
   job4:
     name: job4
     needs: job3
-    runs-on: macos-12
+    runs-on: macos-latest
     steps:
       # Download the file uploaded by job3
       - name: Download artifact
