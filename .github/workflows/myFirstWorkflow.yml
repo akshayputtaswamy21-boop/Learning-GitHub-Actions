@@ -35,6 +35,7 @@ jobs:
           ls -ltr
           cd downloaded_directory
           ls -ltr 
+          cat myartifact.txt
           
 
 
