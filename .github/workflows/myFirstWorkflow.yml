@@ -13,7 +13,7 @@ jobs:
           ls -ltr
           hostname
       - name: step2 -checkout
-        uses: actions/checkout@5.0.0
+        uses: actions/checkout@7.0.1
       - name: step-2
         run: |
           pwd
