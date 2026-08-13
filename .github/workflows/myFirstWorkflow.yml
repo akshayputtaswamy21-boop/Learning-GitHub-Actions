@@ -43,7 +43,13 @@ jobs:
           cd downloaded_directory
           ls -ltr 
           cat myartifact.txt
-          
+
+  job2:
+    name: job2
+    runs-on: macos-12
+    steps:
+      - exit 1
+
 
 
           
