@@ -1,2 +1,11 @@
 name: my-first-workflow
 on: push
+jobs:
+  job1:
+    name: JOB1
+    runs-on: ubantu-latest
+    steps:
+      - name: running single command on job1
+        run: echo "Hello This Is my first job"
+      - name: checking os Release for github Hosted Runner
+        run: cat /etc/os-release
