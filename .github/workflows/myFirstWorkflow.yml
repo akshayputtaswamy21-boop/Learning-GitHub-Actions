@@ -17,7 +17,7 @@ jobs:
       - name: step-3
         run: |
           pwd
-          echo 'ls -a' >> myartifact.txt 
+          echo 'Hi this is artifact upload test file' >> myartifact.txt 
           ls -ltr
           hostname
       - name: Upload single File
@@ -31,7 +31,10 @@ jobs:
           name: single_file
           path: ./downloaded directory
       - name: Test downloaded file
-        run: ls -ltr
+        run: |
+          ls -ltr
+          cd /downloaded directory
+          ls -ltr 
           
 
 
