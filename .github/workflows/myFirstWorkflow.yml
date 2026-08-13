@@ -21,3 +21,18 @@ jobs:
         run: | 
             echo "Hi from AP"
             echo "Current time is  `date`"
+  job3:
+    name: job3
+    runs-on: macos-12
+    steps:
+      - name: Installing brew
+        run: |
+          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  job4:
+    name : job4
+    needs: job3
+    runs-on: macos-12
+    steps:
+      name: Test brew installation
+      run: brew --version
+
