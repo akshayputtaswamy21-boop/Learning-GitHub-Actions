@@ -45,7 +45,7 @@ jobs:
           cat myartifact.txt
 
   job2:
-    name: job2
+    name: JOB2
     runs-on: ubuntu-latest
     steps:
       - name: test pr
