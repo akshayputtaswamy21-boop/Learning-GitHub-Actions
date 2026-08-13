@@ -28,11 +28,13 @@ jobs:
       - name: Installing brew
         run: |
           /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+
   job4:
     name : job4
     needs: job3
     runs-on: macos-12
     steps:
-      name: Test brew installation
-      run: brew --version
+      - name: Test brew installation
+        run: brew --version
 
