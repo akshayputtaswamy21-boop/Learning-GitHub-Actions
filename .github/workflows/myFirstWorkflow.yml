@@ -53,7 +53,7 @@ jobs:
       - name: test env's
         run: |
           echo "[INFO] Running the job on $ENV_ZONE with user $APP_USER"
-          eco "[INFO] The AWS acount id is : {{ secrets.AWS_ACCOUNT_ID }}"
+          echo "[INFO] The AWS acount id is : {{ secrets.AWS_ACCOUNT_ID }}"
 
 
 
