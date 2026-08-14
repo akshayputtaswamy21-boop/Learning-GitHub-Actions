@@ -6,6 +6,9 @@ on:
       - dev
       - 'feature-*'
   workflow_dispatch:
+  pull_request:
+    branches:
+      - main
 env:
   ENV_ZONE: dev
   APP_USER: ap
