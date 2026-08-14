@@ -5,9 +5,6 @@ on:
       - main
       - dev
       - 'feature-*'
-  pull_request:
-    branches:
-      - main
   workflow_dispatch:
 env:
   ENV_ZONE: dev
@@ -54,7 +51,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: test env's
-        run: echo '[INFO] Running the job on $ENV_ZONE with user $APP_USER'
+        run: |
+          echo '[INFO] Running the job on $ENV_ZONE with user $APP_USER'
 
 
 
