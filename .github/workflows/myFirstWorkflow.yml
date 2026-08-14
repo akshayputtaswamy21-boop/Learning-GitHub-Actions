@@ -65,6 +65,7 @@ jobs:
           echo "[INFO] AWS account is ${{ secrets.AWS_ACCOUNT_ID }}"
     environment:
       name: DEV
+    if: github.ref == 'refs/heads/dev'
   PROD_DEPLOYMETN:
     name: Production
     runs-on: ubuntu-latest
@@ -75,3 +76,4 @@ jobs:
 
     environment:
       name: PROD
+    if: github.ref == 'refs/heads/main'
