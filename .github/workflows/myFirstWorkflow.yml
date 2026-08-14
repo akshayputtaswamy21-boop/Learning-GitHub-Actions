@@ -64,13 +64,14 @@ jobs:
           echo "[INFO] running DEV_ENVIRONMENT with user ${{ vars.USER }} on port ${{ vars.PORT }}"
           echo "[INFO] AWS account is ${{ secrets.AWS_ACCOUNT_ID }}"
     environment:
-      name: PRODUCTION
+      name: DEV
   PROD_DEPLOYMETN:
     name: Production
     runs-on: ubuntu-latest
     steps:
       - name: Test PROD Environment
         run: |
-          echo "[INFO] Uset ${{ vars.HOST }} is running the Prouction deployment on port ${{ vars.port }}"
+          echo "[INFO] User ${{ vars.HOST }} is running the Production deployment on port ${{ vars.port }}"
 
-          
+    environment:
+      name: PROD
