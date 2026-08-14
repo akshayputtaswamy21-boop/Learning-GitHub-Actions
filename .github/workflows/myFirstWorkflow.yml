@@ -3,8 +3,6 @@ on:
   push:
     branches:
       - main
-      - dev
-      - 'feature-*'
   workflow_dispatch:
   pull_request:
     branches:
