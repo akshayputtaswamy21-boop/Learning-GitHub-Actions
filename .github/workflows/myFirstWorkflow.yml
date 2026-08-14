@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+      - dev
   workflow_dispatch:
   pull_request:
     branches:
@@ -12,75 +13,19 @@ env:
   APP_USER: ap
   APP_PORT: 80
 
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
-
 jobs:
-  job1:
-    name: JOB1
+  unit-tests:
+    name: Running Unit Tests
     runs-on: ubuntu-latest
     steps:
-      - name: step-1
-        run: |
-          pwd
-          ls -ltr
-          hostname
-      - name: step-2-checkout
+      - name: checkout code
         uses: actions/checkout@v7.0.1
-      - name: step-3
-        run: |
-          pwd
-          echo 'Hi this is artifact upload test file' >> myartifact.txt 
-          ls -ltr
-          hostname
-      - name: Upload single File
-        uses: actions/upload-artifact@v7.0.1
+      - name: Set up Python
+        uses: actions/setup-python@v7.0.0
         with:
-          name: single_file
-          path: ./myartifact.txt
-      - name: Download  artifacts
-        uses: actions/download-artifact@v8.0.0
-        with:
-          name: single_file
-          path: ./downloaded_directory
-      - name: Test downloaded file
-        run: |
-          ls -ltr
-          cd downloaded_directory
-          ls -ltr 
-          cat myartifact.txt
-
-  job2:
-    name: JOB2
-    runs-on: ubuntu-latest
-    steps:
-      - name: test env's
-        run: |
-          echo "[INFO] Running the job on $ENV_ZONE with user $APP_USER"
-          echo "[INFO] The AWS acount id is : ${{ secrets.AWS_ACCOUNT_ID }}"
-          echo "[INFO] ${{ github.head_ref }} "
-
-  Dev_Deployment:
-    name: development
-    runs-on: ubuntu-latest
-    steps:
-      - name: test evnironments
-        run: |
-          echo "[INFO] running DEV_ENVIRONMENT with user ${{ vars.USER }} on port ${{ vars.PORT }}"
-          echo "[INFO] AWS account is ${{ secrets.AWS_ACCOUNT_ID }}"
-    environment:
-      name: DEV
-    if: github.ref_name == 'dev' || github.head_ref == 'dev'
-
-  PROD_DEPLOYMETN:
-    name: Production
-    runs-on: ubuntu-latest
-    steps:
-      - name: Test PROD Environment
-        run: |
-          echo "[INFO] User ${{ vars.HOST }} is running the Production deployment on port ${{ vars.port }}"
-
-    environment:
-      name: PROD
-    if: github.ref == 'refs/heads/main'
+          python-version: '3.10'
+      - name: Install Dependencies
+        run: python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Run Unit Tests
+        run: pytest -v
