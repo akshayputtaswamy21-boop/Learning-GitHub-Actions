@@ -1,9 +1,8 @@
 name: my-first-workflow
 on:
-  push:
-    branches:
-      - main
-      - dev
+#  push:
+#    branches:
+#      - dev
   workflow_dispatch:
   pull_request:
     branches:
