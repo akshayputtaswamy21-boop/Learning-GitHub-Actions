@@ -1,7 +1,21 @@
 name: my-first-workflow
 on:
   push:
+    branches:
+      - main
   workflow_dispatch:
+  pull_request:
+    branches:
+      - main
+env:
+  ENV_ZONE: dev
+  APP_USER: ap
+  APP_PORT: 80
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   job1:
     name: JOB1
@@ -36,7 +50,37 @@ jobs:
           cd downloaded_directory
           ls -ltr 
           cat myartifact.txt
-          
 
+  job2:
+    name: JOB2
+    runs-on: ubuntu-latest
+    steps:
+      - name: test env's
+        run: |
+          echo "[INFO] Running the job on $ENV_ZONE with user $APP_USER"
+          echo "[INFO] The AWS acount id is : ${{ secrets.AWS_ACCOUNT_ID }}"
+          echo "[INFO] ${{ github.head_ref }} "
 
-          
+  Dev_Deployment:
+    name: development
+    runs-on: ubuntu-latest
+    steps:
+      - name: test evnironments
+        run: |
+          echo "[INFO] running DEV_ENVIRONMENT with user ${{ vars.USER }} on port ${{ vars.PORT }}"
+          echo "[INFO] AWS account is ${{ secrets.AWS_ACCOUNT_ID }}"
+    environment:
+      name: DEV
+    if: github.ref_name == 'dev' || github.head_ref == 'dev'
+
+  PROD_DEPLOYMETN:
+    name: Production
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test PROD Environment
+        run: |
+          echo "[INFO] User ${{ vars.HOST }} is running the Production deployment on port ${{ vars.port }}"
+
+    environment:
+      name: PROD
+    if: github.ref == 'refs/heads/main'
