@@ -62,7 +62,7 @@ jobs:
       - name: test evnironments
         run: |
           echo "[INFO] running DEV_ENVIRONMENT with user ${{ vars.USER }} on port ${{ vars.PORT }}"
-          echo "[INFO] AWS account is ${{ secrerts.AWS_ACCOUNT_ID }}"
+          echo "[INFO] AWS account is ${{ secrets.AWS_ACCOUNT_ID }}"
     environment:
       name: PRODUCTION
   PROD_DEPLOYMETN:
