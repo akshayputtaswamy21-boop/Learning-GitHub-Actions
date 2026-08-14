@@ -57,7 +57,7 @@ jobs:
         run: |
           echo "[INFO] Running the job on $ENV_ZONE with user $APP_USER"
           echo "[INFO] The AWS acount id is : ${{ secrets.AWS_ACCOUNT_ID }}"
-          echo "[INFO] ${{ github.ref }} "
+          echo "[INFO] ${{ github.head_ref }} "
 
   Dev_Deployment:
     name: development
