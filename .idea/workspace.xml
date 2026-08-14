@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="507d3b18-b885-451b-8a4e-186c136b779f" name="Changes" comment="github workflow setup for python application">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/myFirstWorkflow.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/myFirstWorkflow.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="INCOMING_COMMITS_CHECK_STRATEGY" value="FETCH" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;akshayputtaswamy21-boop&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/akshayputtaswamy21-boop/Learning-GitHub-Actions.git&quot;,
+    &quot;accountId&quot;: &quot;61d925a9-835e-497e-bf90-c7f52ad7eb44&quot;
+  }
+}</component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.016078957945756" />
+      <entry key="MS500" value="1.7476820418899688" />
+      <entry key="S2" value="3.6852651853112524" />
+      <entry key="S5" value="6.4312779316037485" />
+      <entry key="S10" value="9.25596478932674" />
+      <entry key="S30" value="14.950118843222189" />
+      <entry key="S60" value="21.801007729571737" />
+      <entry key="M2" value="32.92881056778744" />
+      <entry key="M5" value="50.12551360952102" />
+      <entry key="M10" value="60.4829493962886" />
+      <entry key="M15" value="65.29838359400613" />
+      <entry key="M30" value="72.9415973458333" />
+      <entry key="H1" value="87.11888331204649" />
+      <entry key="H2" value="117.31680448810341" />
+      <entry key="H4" value="163.38220225277973" />
+      <entry key="D1" value="416.2443043507592" />
+      <entry key="W1" value="587.2009179583587" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="3.724827574489976E-153" />
+      <entry key="S2" value="8.632020248629826E-39" />
+      <entry key="S5" value="8.03678327295911E-16" />
+      <entry key="S10" value="3.9382869392922806E-8" />
+      <entry key="S30" value="0.006343009062320358" />
+      <entry key="S60" value="0.1532391528874641" />
+      <entry key="M2" value="0.8299383223826616" />
+      <entry key="M5" value="2.401311732056645" />
+      <entry key="M10" value="3.4557195504001372" />
+      <entry key="M15" value="3.907067482447179" />
+      <entry key="M30" value="4.520307105112949" />
+      <entry key="H1" value="5.800625390160156" />
+      <entry key="H2" value="8.483880093537808" />
+      <entry key="H4" value="11.878954881976002" />
+      <entry key="D1" value="25.97568526107328" />
+      <entry key="W1" value="34.9712931838316" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9883992170589293" />
+      <entry key="MS500" value="1.7387188030918697" />
+      <entry key="S2" value="3.680558918862234" />
+      <entry key="S5" value="6.427922006141156" />
+      <entry key="S10" value="9.253313421794402" />
+      <entry key="S30" value="14.952109391530964" />
+      <entry key="S60" value="21.93891725675985" />
+      <entry key="M2" value="33.722764023910315" />
+      <entry key="M5" value="52.486264983404176" />
+      <entry key="M10" value="63.90965529865731" />
+      <entry key="M15" value="69.18362300997312" />
+      <entry key="M30" value="77.44942456196618" />
+      <entry key="H1" value="92.91211067169397" />
+      <entry key="H2" value="125.79589284871491" />
+      <entry key="H4" value="175.25807484193564" />
+      <entry key="D1" value="442.21897195559995" />
+      <entry key="W1" value="622.1720183073239" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3HrmbimEK6YpecEf37B0Hhvz4cN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.hello.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "#9 on dev",
+    "git.auto.fetch.suggestion.counter": "1",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/akshayp/Desktop/Project/DEVOP/github_actions/Learning-GitHub-Actions",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "to.speed.mode.migration.done": "true"
+  }
+}]]></component>
+  <component name="PyDebuggerOptionsProvider">
+    <option name="myDebuggerBackend" value="DEBUGPY" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Learning-GitHub-Actions" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Learning-GitHub-Actions" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="Learning-GitHub-Actions" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="hello" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Learning-GitHub-Actions" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/hello.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="Learning-GitHub-Actions" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Autodetect">
+      <module name="Learning-GitHub-Actions" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="Learning-GitHub-Actions" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-34e2839f716b-intellij.indexing.shared.core-IU-262.9437.185" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="507d3b18-b885-451b-8a4e-186c136b779f" name="Changes" comment="" />
+      <created>1786634635017</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1786634635017</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="my first commit" />
+    <MESSAGE value="create first job with 2 steps" />
+    <MESSAGE value="added multiple jobs with multi steps" />
+    <MESSAGE value="installing brew" />
+    <MESSAGE value="installing tree using brew" />
+    <MESSAGE value="jpb sequence testing" />
+    <MESSAGE value="running macos-latest" />
+    <MESSAGE value="testing workflow dispatch" />
+    <MESSAGE value="testing actions" />
+    <MESSAGE value="testing actions on dev branch" />
+    <MESSAGE value="testing env's" />
+    <MESSAGE value="testing secrets" />
+    <MESSAGE value="testing Environments" />
+    <MESSAGE value="testing Environments 123" />
+    <MESSAGE value="testing Environments 1" />
+    <MESSAGE value="testing Environments 2" />
+    <MESSAGE value="testing Environments 4" />
+    <MESSAGE value="setting up environmet for a python application" />
+    <MESSAGE value="github workflow setup for python application" />
+    <option name="LAST_COMMIT_MESSAGE" value="github workflow setup for python application" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Learning_GitHub_Actions$hello.coverage" NAME="hello Coverage Results" MODIFIED="1786654664966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+  </component>
+</project>
