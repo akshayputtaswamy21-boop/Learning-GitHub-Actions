@@ -7,7 +7,12 @@ on:
   pull_request:
     branches:
       - main
-
+permissions:
+  actions: read
+  security-events: write
+  packages: write
+  contents: read
+  
 jobs:
   ci-pipeline-job:
     uses: akshayputtaswamy21-boop/reusable-workflows/.github/workflows/ci-pipeline.yml@main
