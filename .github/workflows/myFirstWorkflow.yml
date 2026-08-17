@@ -80,3 +80,38 @@ jobs:
         uses: SonarSource/sonarqube-quality-gate-action@v1.1.0
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+  Docker:
+    name: Build_Image
+    runs-on: ubuntu-latest
+    needs: [codeQl,sonarqube]
+    if: success()
+    outputs:
+      image-tags: ${{ steps.vars.outputs.IMAGE_TAGS }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7.0.1
+
+      - name: Setup Docker Buildx
+        uses: docker/setup-buildx-action@v3.0.0
+
+      - name: Generate Image Tags
+        id: vars
+        run : |
+          IMAGE_TAGS="${{ github.run_id }}-${GITHUB_SHA::7} "
+          echo "IMAGE_TAGS=$IMAGE_TAGS" >> $GITHUB_OUTPUT
+
+      - name: Build Image (no push)
+        uses: docker/build-push-action@v5.0.0
+
+        with:
+          context: .
+          file: ./Dockerfile
+          push: false
+          tags: akshayputtaswamy:${{ steps.vars.outputs.IMAGE_TAGS }}
+      - name: Save Docker Image
+        run: docker save akshayputtaswamy:${{ steps.vars.outputs.IMAGE_TAGS }}-o test_app_iamge.tar
+      - name: Upload Docker Image Artifact
+        uses: actions/upload-artifact@v7.0.1
+        with:
+          name: test_app_image
+          path: test_app_image.tar
