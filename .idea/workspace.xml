@@ -36,61 +36,61 @@
 }</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.016078957945756" />
-      <entry key="MS500" value="1.7476820418899688" />
-      <entry key="S2" value="3.6852651853112524" />
-      <entry key="S5" value="6.4312779316037485" />
-      <entry key="S10" value="9.25596478932674" />
-      <entry key="S30" value="14.950118843222189" />
-      <entry key="S60" value="21.801007729571737" />
-      <entry key="M2" value="32.92881056778744" />
-      <entry key="M5" value="50.12551360952102" />
-      <entry key="M10" value="60.4829493962886" />
-      <entry key="M15" value="65.29838359400613" />
-      <entry key="M30" value="72.9415973458333" />
-      <entry key="H1" value="87.11888331204649" />
-      <entry key="H2" value="117.31680448810341" />
-      <entry key="H4" value="163.38220225277973" />
-      <entry key="D1" value="416.2443043507592" />
-      <entry key="W1" value="587.2009179583587" />
+      <entry key="MS100" value="1.0000000537187137" />
+      <entry key="MS500" value="1.0354223171278212" />
+      <entry key="S2" value="1.5788807650311862" />
+      <entry key="S5" value="2.5249061743874894" />
+      <entry key="S10" value="3.646813707011658" />
+      <entry key="S30" value="6.168958866727353" />
+      <entry key="S60" value="8.310518005747102" />
+      <entry key="M2" value="13.225937154603633" />
+      <entry key="M5" value="33.34438597936126" />
+      <entry key="M10" value="62.89563421836842" />
+      <entry key="M15" value="84.60737314424186" />
+      <entry key="M30" value="122.42891284647804" />
+      <entry key="H1" value="158.86004429634315" />
+      <entry key="H2" value="202.33741579984806" />
+      <entry key="H4" value="256.9757262607719" />
+      <entry key="D1" value="520.5251110957046" />
+      <entry key="W1" value="696.8735151948711" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="3.724827574489976E-153" />
-      <entry key="S2" value="8.632020248629826E-39" />
-      <entry key="S5" value="8.03678327295911E-16" />
-      <entry key="S10" value="3.9382869392922806E-8" />
-      <entry key="S30" value="0.006343009062320358" />
-      <entry key="S60" value="0.1532391528874641" />
-      <entry key="M2" value="0.8299383223826616" />
-      <entry key="M5" value="2.401311732056645" />
-      <entry key="M10" value="3.4557195504001372" />
-      <entry key="M15" value="3.907067482447179" />
-      <entry key="M30" value="4.520307105112949" />
-      <entry key="H1" value="5.800625390160156" />
-      <entry key="H2" value="8.483880093537808" />
-      <entry key="H4" value="11.878954881976002" />
-      <entry key="D1" value="25.97568526107328" />
-      <entry key="W1" value="34.9712931838316" />
+      <entry key="MS100" value="1.0483807547950339E-113" />
+      <entry key="MS500" value="2.99711537808365E-23" />
+      <entry key="S2" value="3.7146890974724817E-6" />
+      <entry key="S5" value="0.010618316600091212" />
+      <entry key="S10" value="0.16415761347215285" />
+      <entry key="S30" value="1.1110575599748527" />
+      <entry key="S60" value="1.878829411824306" />
+      <entry key="M2" value="2.836930037768979" />
+      <entry key="M5" value="5.659234791647685" />
+      <entry key="M10" value="9.17372565912407" />
+      <entry key="M15" value="11.535982725717384" />
+      <entry key="M30" value="15.399593220067622" />
+      <entry key="H1" value="18.958152656248394" />
+      <entry key="H2" value="22.992476313563177" />
+      <entry key="H4" value="27.298645143193514" />
+      <entry key="D1" value="42.49638197079451" />
+      <entry key="W1" value="51.88338749479601" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9883992170589293" />
-      <entry key="MS500" value="1.7387188030918697" />
-      <entry key="S2" value="3.680558918862234" />
-      <entry key="S5" value="6.427922006141156" />
-      <entry key="S10" value="9.253313421794402" />
-      <entry key="S30" value="14.952109391530964" />
-      <entry key="S60" value="21.93891725675985" />
-      <entry key="M2" value="33.722764023910315" />
-      <entry key="M5" value="52.486264983404176" />
-      <entry key="M10" value="63.90965529865731" />
-      <entry key="M15" value="69.18362300997312" />
-      <entry key="M30" value="77.44942456196618" />
-      <entry key="H1" value="92.91211067169397" />
-      <entry key="H2" value="125.79589284871491" />
-      <entry key="H4" value="175.25807484193564" />
-      <entry key="D1" value="442.21897195559995" />
-      <entry key="W1" value="622.1720183073239" />
+      <entry key="MS100" value="0.959264169100383" />
+      <entry key="MS500" value="1.0266015431781876" />
+      <entry key="S2" value="1.574240236816417" />
+      <entry key="S5" value="2.527798169242203" />
+      <entry key="S10" value="3.7901337173369876" />
+      <entry key="S30" value="7.2302010483277765" />
+      <entry key="S60" value="10.116784999920782" />
+      <entry key="M2" value="15.940089776853789" />
+      <entry key="M5" value="38.85911298353255" />
+      <entry key="M10" value="71.95375618559419" />
+      <entry key="M15" value="96.04937557845751" />
+      <entry key="M30" value="137.76865144259577" />
+      <entry key="H1" value="177.78313333862295" />
+      <entry key="H2" value="225.3100731506367" />
+      <entry key="H4" value="284.2634136702593" />
+      <entry key="D1" value="563.019100080557" />
+      <entry key="W1" value="748.7565107935744" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -114,7 +114,7 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "dev",
+    "git-widget-placeholder": "#10 on dev",
     "git.auto.fetch.suggestion.counter": "1",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
