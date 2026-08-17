@@ -10,11 +10,10 @@ on:
 
 jobs:
   ci-pipeline-job:
-    uses: akshayputtaswamy21-boop/reusable-workflows/.github/workflows/ci-pipeline.yaml@main
+    uses: akshayputtaswamy21-boop/reusable-workflows/.github/workflows/ci-pipeline.yml@main
     secrets:
       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
       DOCKERHUB_TOKENS: ${{ secrets.DOCKERHUB_TOKENS }}
-
 
 
