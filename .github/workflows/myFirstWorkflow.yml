@@ -97,7 +97,7 @@ jobs:
       - name: Generate Image Tags
         id: vars
         run : |
-          IMAGE_TAGS="${{ github.run_id }}-${GITHUB_SHA::7} "
+          IMAGE_TAGS="${{ github.run_id }}-${GITHUB_SHA::7}"
           echo "IMAGE_TAGS=$IMAGE_TAGS" >> $GITHUB_OUTPUT
 
       - name: Build Image (no push)
@@ -108,8 +108,10 @@ jobs:
           file: ./Dockerfile
           push: false
           tags: akshayputtaswamy:${{ steps.vars.outputs.IMAGE_TAGS }}
+
       - name: Save Docker Image
         run: docker save akshayputtaswamy:${{ steps.vars.outputs.IMAGE_TAGS }} -o test_app_iamge.tar
+
       - name: Upload Docker Image Artifact
         uses: actions/upload-artifact@v7.0.1
         with:
