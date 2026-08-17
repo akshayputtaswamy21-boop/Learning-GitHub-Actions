@@ -36,4 +36,4 @@ def add_task():
 
 if __name__ == "__main__":
     debug_mode = os.environ.get("FLASK_DEBUG", "0") == "1"
-    app.run(debug=True)
+    app.run(debug=debug_mode)
