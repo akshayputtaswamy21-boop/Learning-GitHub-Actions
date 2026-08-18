@@ -18,7 +18,7 @@ jobs:
   ci-pipeline-job:
     uses:  Akshay-Puttaswamy-Dev-ops/reusable-workflows/.github/workflows/ci-pipeline.yml@main
     with:
-      run_code_ql: true
+      run_codeql: true
       run_sonarqube: true
       run_build: true
       run_ghcr_publish: true
