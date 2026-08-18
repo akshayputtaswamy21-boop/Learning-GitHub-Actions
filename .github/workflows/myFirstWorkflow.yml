@@ -1,8 +1,8 @@
 name: my-first-workflow
 on:
-#  push:
-#    branches:
-#      - dev
+  push:
+    branches:
+      - dev
   workflow_dispatch:
   pull_request:
     branches:
@@ -14,9 +14,21 @@ permissions:
   contents: read
   
 jobs:
-  ci-pipeline-job:
-    uses: akshayputtaswamy21-boop/reusable-workflows/.github/workflows/ci-pipeline.yml@main
-    secrets:
-      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-      DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
-      DOCKERHUB_TOKENS: ${{ secrets.DOCKERHUB_TOKENS }}
+#  ci-pipeline-job:
+#    uses: akshayputtaswamy21-boop/reusable-workflows/.github/workflows/ci-pipeline.yml@main
+#    secrets:
+#      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+#      DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+#      DOCKERHUB_TOKENS: ${{ secrets.DOCKERHUB_TOKENS }}
+
+  Test-Self-hosted-runners:
+      name:  self-hosted-runner
+      runs-on: self-hosted
+      steps:
+        - name: Display System Information
+          run: |
+            echo "Hostname: $(hostname)"
+            echo "OS Version:"
+            lsb_release -a || cat /etc/os-release
+            echo "Runner Name: ${{ runner.name }}"
+            echo "Runner OS: ${{  runner.os }}"
