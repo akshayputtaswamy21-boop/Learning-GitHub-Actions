@@ -19,6 +19,6 @@ jobs:
         run: |
           echo "Hostname: $(hostname)"
           echo "OS Version:"
-          sw_vers
+          lsb_release -a || cat /etc/os-release
           echo "Runner Name: ${{ runner.name }}"
           echo "Runner OS: ${{ runner.os }}"
